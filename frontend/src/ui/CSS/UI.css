@@ -1,0 +1,205 @@
+:root {
+  --primary-color: rgb(14, 52, 90);
+  --secondary-color: rgb(245, 245, 245);
+  --on-primary: rgba(14, 52, 90, 0.6);
+  --on-secondary: rgb(155, 155, 155);
+}
+html {
+  padding: 0;
+}
+
+body {
+  color: var(--primary-color);
+}
+
+.unstyled-link {
+  text-decoration: none;
+}
+
+.section-page {
+  background-color: rgb(65, 23, 23);
+  right: 12.5vw;
+  bottom: 95vh;
+  position: relative;
+}
+
+.background-primary-color {
+  background-color: var(--primary-color);
+}
+
+/* Navigation Bar */
+.nav {
+  position: absolute;
+  z-index: 2;
+  padding: 0.25em;
+  margin: 0;
+  top: 0;
+  bottom: 0;
+  max-width: 12.5vw;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  opacity: 75%;
+}
+
+.home-button {
+  justify-content: center;
+  display: flex;
+  font-size: 5em;
+  color: var(--secondary-color);
+  padding: 0.5em 1em;
+}
+
+.home-button:hover {
+  color: var(--on-secondary);
+}
+
+.nav-button {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  padding: 2em 3em 2em 1em;
+  margin: 0.2em 0.1em;
+  text-align: right;
+  min-width: 1em;
+}
+
+.nav-button:hover {
+  background-color: var(--on-secondary);
+}
+
+.dropdown-toggle {
+  display: none;
+}
+
+/* Footer */
+
+.perma-footer {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-height: 5vh;
+  background-color: var(--primary-color);
+  text-align: center;
+  font-size: 1em;
+  color: var(--secondary-color);
+  padding: 0.4em 0 0.4em 10em;
+  opacity: 85%;
+}
+
+.footer-content {
+  display: inline-block;
+  padding: 0 1.5em;
+}
+
+.fas {
+  font-size: 1.4em;
+  cursor: pointer;
+  color: var(--secondary-color);
+  opacity: 65%;
+}
+
+.fas:hover {
+  color: var(--on-secondary);
+}
+
+/* Homepage */
+
+/* Skills */
+
+/* Portfolio */
+
+/* Contact Me */
+
+@media (min-width: 551px) and (max-width: 978px) {
+  /* Navbar */
+
+  .home-button {
+    font-size: 3em;
+    padding: 0.4em 0;
+  }
+
+  .nav-button {
+    text-align: center;
+    padding: 0.5em;
+    min-width: 3.3em;
+  }
+
+  /* Footer */
+
+  /* Homepage */
+
+  /* Skills */
+
+  /* Portfolio */
+
+  /* Contact */
+}
+
+@media (max-width: 550px) {
+  /* Navbar */
+
+  .nav {
+    position: absolute;
+    left: 0;
+    max-width: 100vw;
+    right: 0;
+    max-height: 5vh;
+    padding: 0.25em;
+  }
+
+  .home-button {
+    font-size: 1.3em;
+    padding: 0.5em;
+    display: inline-block;
+  }
+
+  .dropdown {
+    float: right;
+    overflow: hidden;
+  }
+
+  .dropdown-toggle {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    margin: 0.5em;
+    font-size: 1em;
+  }
+
+  .dropdown-toggle-active {
+    color: var(--on-secondary);
+  }
+
+  .nav-button {
+    font: 1em sans-serif;
+    padding: 0.4em;
+  }
+
+  .dropdown-content {
+    display: none;
+    margin-top: 3em;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+    transition-duration: 2000ms;
+  }
+
+  /* Footer */
+
+  .perma-footer {
+    max-height: 3vh;
+    text-align: center;
+    font-size: 1em;
+    padding: 0.2em 0;
+  }
+
+  /* Homepage */
+
+  /* Skills */
+
+  /* Portfolio */
+
+  /* Contact */
+}
