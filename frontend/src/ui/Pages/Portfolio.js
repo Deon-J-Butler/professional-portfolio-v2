@@ -1,44 +1,89 @@
 import React from "react";
-import { Container } from "react-bootstrap";
 
 export function Portfolio() {
   return (
-    <>
-      <Container className="section-title">
-        <h5>Our</h5>
-        <h1>STORY</h1>
-      </Container>
-      <Container fluid className="d-flex justify-content-center">
-        <Container id="about-us-container">
-          <div id="about-us-image">
-            <img src="https://placehold.jp/725x600.png" alt="Placeholder" />
+    <section className="page">
+      <div className="container">
+        <h3 class="d-lg-none">Swipe the projects to see more...</h3>
+        <div class="container-fluid px-0">
+          <div class="portfolio-container">
+            <button class="handle left-handle my-5 d-none d-md-block">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <div class="slider py-5 d-sm-flex">
+              <div>
+                <a href="https://github.com/Deon-J-Butler/think-tank">
+                  <h3>ThinkTank</h3>
+                  <img
+                    src="documentation/images/think-tank.png"
+                    alt="ThinkTank"
+                  />
+                </a>
+                <p class="text-box">
+                  ThinkTank is a web application that serves as an archive for
+                  users to store innovative ideas. (Click to see the source code
+                  and find out more).
+                </p>
+              </div>
+              <div>
+                <a href="https://github.com/deepdive-bootcamp-team-pf/pothole-finder">
+                  <h3>Pothole Tracker</h3>
+                  <img
+                    src="documentation/images/nyc-map.png"
+                    alt="Pothole Tracker"
+                  />
+                </a>
+                <p class="text-box">
+                  A web application that allows users to plot potholes on a map
+                  that can be viewed by other users. Later releases will give
+                  administrative rights to DoT officials to allow them to see a
+                  list of potholes by severity and location for them to set a
+                  priority for repairs.
+                </p>
+              </div>
+              <div>
+                <a href="https://github.com/Deon-J-Butler/pong">
+                  <h3>Pong</h3>
+                  <img src="documentation/images/pong.png" alt="Pong" />
+                </a>
+                <p class="text-box">
+                  Test your skills playing pong against a supercomputer. Be
+                  careful, it always goes for the spike.
+                </p>
+              </div>
+              <div>
+                <a href="https://github.com/Deon-J-Butler/light-and-dark">
+                  <h3>Light and Dark Mode</h3>
+                  <img
+                    src="documentation/images/light-dark.png"
+                    alt="Light and Dark"
+                  />
+                </a>
+                <p class="text-box">
+                  This is a project showcasing how to turn a website from light
+                  to dark mode and vice versa.
+                </p>
+              </div>
+              <div>
+                <a href="https://github.com/Deon-J-Butler/netflix-scroll">
+                  <h3>Netflix Scroll</h3>
+                  <img
+                    src="documentation/images/netflix-scroll.png"
+                    alt="Netflix Scroll"
+                  />
+                </a>
+                <p class="text-box">
+                  This project shows how to build and implement netflix scroll
+                  into a carousel-like element.
+                </p>
+              </div>
+            </div>
+            <button class="handle right-handle my-5 d-none d-md-block">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
           </div>
-          <div id="about-us-div-1">
-            <p>
-              Continual learning is the constancy in harboring knowledge in
-              developing mind. To improve in all areas in life it is vital to
-              incorporate continual education; it creates value, change
-              lifestyle, and the economy in whole.
-            </p>
-            <p>
-              At Globis Bookstore, we make it conveninet to achieve multiple
-              goals at one place. More deals, low prices, and interesting genre.
-            </p>
-          </div>
-          <div id="about-us-div-2">
-            <p className="mb-0">
-              <strong>Globis Bookstore</strong> was established in 2020 with an
-              interest to sell diversity of books genre to our customers by
-              allowing multi facet methods of receiving your purchased books.{" "}
-            </p>
-            <ul className="ps-0 mb-0">We offer:</ul>
-            <li className="list-item-spacing">hard cover copies</li>
-            <li className="list-item-spacing">soft cover copies</li>
-            <li className="list-item-spacing">audio stream books</li>
-            <li className="list-item-spacing">video stream books</li>
-          </div>
-        </Container>
-      </Container>
-    </>
+        </div>
+      </div>
+    </section>
   );
 }

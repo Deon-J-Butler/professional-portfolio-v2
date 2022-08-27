@@ -7,19 +7,15 @@ import { Portfolio } from "./ui/Pages/Portfolio";
 import { Contact } from "./ui/Pages/Contact";
 import { Footer } from "./ui/Nav-Footer/Footer";
 
-export function App() {
-  return (
-    <>
-      <BrowserRouter>
-        <Navigation />
-        <Routes>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/skills" component={Skills} />
-          <Route exact path="/portfolio" component={Portfolio} />
-          <Route exact path="/contact-me" component={Contact} />
-        </Routes>
-        <Footer />
-      </BrowserRouter>
-    </>
-  );
-}
+export const App = () => (
+  <BrowserRouter>
+    <Navigation />
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/skills" element={<Skills />} />
+      <Route path="/portfolio" element={<Portfolio />} />
+      <Route path="/contact-me" element={<Contact />} />
+    </Routes>
+    <Footer />
+  </BrowserRouter>
+);
