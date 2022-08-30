@@ -1,39 +1,39 @@
-import React from "react";
+import React from 'react';
 
 export function Portfolio() {
   return (
-    <section className="page">
-      <div className="container">
-        <h3 class="d-lg-none">Swipe the projects to see more...</h3>
-        <div class="container-fluid px-0">
-          <div class="portfolio-container">
-            <button class="handle left-handle my-5 d-none d-md-block">
-              <i class="fa-solid fa-chevron-left"></i>
+    <section className='page'>
+      <div className='container'>
+        <h3 className='d-lg-none'>Swipe the projects to see more...</h3>
+        <div className='container-fluid px-0'>
+          <div className='portfolio-container'>
+            <button className='handle left-handle my-5 d-none d-md-block'>
+              <i className='fa-solid fa-chevron-left'></i>
             </button>
-            <div class="slider py-5 d-sm-flex">
+            <div className='slider py-5 d-sm-flex'>
               <div>
-                <a href="https://github.com/Deon-J-Butler/think-tank">
+                <a href='https://github.com/Deon-J-Butler/think-tank'>
                   <h3>ThinkTank</h3>
                   <img
-                    src="documentation/images/think-tank.png"
-                    alt="ThinkTank"
+                    src='documentation/images/think-tank.png'
+                    alt='ThinkTank'
                   />
                 </a>
-                <p class="text-box">
+                <p className='text-box'>
                   ThinkTank is a web application that serves as an archive for
                   users to store innovative ideas. (Click to see the source code
                   and find out more).
                 </p>
               </div>
               <div>
-                <a href="https://github.com/deepdive-bootcamp-team-pf/pothole-finder">
+                <a href='https://github.com/deepdive-bootcamp-team-pf/pothole-finder'>
                   <h3>Pothole Tracker</h3>
                   <img
-                    src="documentation/images/nyc-map.png"
-                    alt="Pothole Tracker"
+                    src='documentation/images/nyc-map.png'
+                    alt='Pothole Tracker'
                   />
                 </a>
-                <p class="text-box">
+                <p className='text-box'>
                   A web application that allows users to plot potholes on a map
                   that can be viewed by other users. Later releases will give
                   administrative rights to DoT officials to allow them to see a
@@ -42,44 +42,44 @@ export function Portfolio() {
                 </p>
               </div>
               <div>
-                <a href="https://github.com/Deon-J-Butler/pong">
+                <a href='https://github.com/Deon-J-Butler/pong'>
                   <h3>Pong</h3>
-                  <img src="documentation/images/pong.png" alt="Pong" />
+                  <img src='documentation/images/pong.png' alt='Pong' />
                 </a>
-                <p class="text-box">
+                <p className='text-box'>
                   Test your skills playing pong against a supercomputer. Be
                   careful, it always goes for the spike.
                 </p>
               </div>
               <div>
-                <a href="https://github.com/Deon-J-Butler/light-and-dark">
+                <a href='https://github.com/Deon-J-Butler/light-and-dark'>
                   <h3>Light and Dark Mode</h3>
                   <img
-                    src="documentation/images/light-dark.png"
-                    alt="Light and Dark"
+                    src='documentation/images/light-dark.png'
+                    alt='Light and Dark'
                   />
                 </a>
-                <p class="text-box">
+                <p className='text-box'>
                   This is a project showcasing how to turn a website from light
                   to dark mode and vice versa.
                 </p>
               </div>
               <div>
-                <a href="https://github.com/Deon-J-Butler/netflix-scroll">
+                <a href='https://github.com/Deon-J-Butler/netflix-scroll'>
                   <h3>Netflix Scroll</h3>
                   <img
-                    src="documentation/images/netflix-scroll.png"
-                    alt="Netflix Scroll"
+                    src='documentation/images/netflix-scroll.png'
+                    alt='Netflix Scroll'
                   />
                 </a>
-                <p class="text-box">
+                <p className='text-box'>
                   This project shows how to build and implement netflix scroll
                   into a carousel-like element.
                 </p>
               </div>
             </div>
-            <button class="handle right-handle my-5 d-none d-md-block">
-              <i class="fa-solid fa-chevron-right"></i>
+            <button className='handle right-handle my-5 d-none d-md-block'>
+              <i className='fa-solid fa-chevron-right'></i>
             </button>
           </div>
         </div>

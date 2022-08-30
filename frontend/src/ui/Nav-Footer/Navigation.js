@@ -34,7 +34,7 @@ export function Navigation() {
           <i className="fa-solid fa-house home-button"></i>
         </a>
         <button className="dropdown-toggle" onClick={showDropdown}>
-          <i class="fa-solid fa-bars"></i>
+          <i className="fa-solid fa-bars"></i>
         </button>
         <div className="dropdown">
           <div id="dropdown-content" className="dropdown-content">
