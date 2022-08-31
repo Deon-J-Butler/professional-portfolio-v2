@@ -1,5 +1,4 @@
 import React from "react";
-import "../CSS/UI.css";
 import { NavButtons } from "./NavButtons";
 
 export function Navigation() {

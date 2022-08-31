@@ -12,6 +12,7 @@ html {
 
 body {
   color: var(--primary-color);
+  margin: 0;
 }
 
 .unstyled-link {
@@ -145,6 +146,19 @@ body {
   white-space: nowrap;
 }
 
+.error {
+  margin: auto;
+  max-width: 35em;
+  text-align: center;
+  font-size: 0.7em;
+  font-weight: bold;
+  color: black;
+  white-space: nowrap;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: rgba(255, 92, 92, 50);
+}
+
 #firstName {
   box-shadow: var(--box-shadow);
 }
@@ -173,6 +187,9 @@ body {
 
 @media (min-width: 616px) and (max-width: 978px) {
   /* Navbar */
+  .nav {
+    min-width: 6em;
+  }
 
   .home-button {
     font-size: 3em;
@@ -182,7 +199,7 @@ body {
   .nav-button {
     text-align: center;
     padding: 0.5em;
-    min-width: 3.3em;
+    min-width: 4em;
   }
 
   /* Footer */
@@ -234,6 +251,10 @@ body {
     padding-right: 100%;
     font-size: 0.8em;
     white-space: nowrap;
+  }
+
+  .error {
+    max-width: 20em;
   }
 
   .form-section {
@@ -371,6 +392,10 @@ body {
   .inline-label {
     display: inline-block;
     padding: 0 1em;
+  }
+
+  .error {
+    max-width: 15em;
   }
 
   .textarea {

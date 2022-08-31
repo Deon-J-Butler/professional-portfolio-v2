@@ -1,17 +1,9 @@
-import { Canvas } from '@react-three/fiber';
 import React from 'react';
-import { AddStars} from './Components/Stars';
 
-export function Contact() {
-
+export function Skills() {
   return (
     <section className='page'>
-      <Canvas>
-        <ambientLight intensity={0.1} />
-        <orthographicCamera args={[0, 0, 0, 0, 0, 1000]} />
-        <AddStars />
-      </Canvas>
-      {/* <div className='contact-container'>
+      <div className='contact-container'>
         <h1>Want to Work Together? Contact Me Now!</h1>
         <form id='contact-form' action='./apis/' method='POST'>
           <div className='form-section'>
@@ -78,7 +70,7 @@ export function Contact() {
             data-sitekey="6LedmvQfAAAAAAyPPDilzDWKM492hGHKADhWCGuM"
           ></div>
         </form>
-      </div> */}
+      </div>
     </section>
   );
 }

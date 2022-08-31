@@ -1,5 +1,4 @@
 import React from "react";
-import "../CSS/UI.css";
 
 export function NavButtons(props) {
   const { link, type } = props.button;
