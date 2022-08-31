@@ -46,6 +46,30 @@ export function ContactForm() {
   );
 }
 
+function FormInput(props) {
+  const { id, label, type } = props;
+
+  return (
+    <div className='inline-label'>
+      <div className='label'>
+        <label htmlFor={id}>{label}</label>
+      </div>
+      <input
+        type={type}
+        name={id}
+        id={id}
+        placeholder={label}
+        onChange={props.handleChange}
+        onBlur={props.handleBlur}
+        value={props.values}
+      />
+      {props.errors.id && props.touched.id && (
+        <div className='error'>{props.errors.id}</div>
+      )}
+    </div>
+  );
+}
+
 function ContactContent(props) {
   const { values, errors, touched, handleChange, handleBlur, handleSubmit } =
     props;
@@ -56,23 +80,7 @@ function ContactContent(props) {
         <h1>Want to Work Together? Contact Me Now!</h1>
         <form id='contact-form' onSubmit={handleSubmit}>
           <div className='form-section'>
-            <div className='inline-label'>
-              <div className='label'>
-                <label htmlFor='firstName'>First Name</label>
-              </div>
-              <input
-                type='text'
-                name='firstName'
-                id='firstName'
-                placeholder='First Name'
-                onChange={handleChange}
-                onBlur={handleBlur}
-                value={values.firstName}
-              />
-              {errors.firstName && touched.firstName && (
-                <div className='error'>{errors.firstName}</div>
-              )}
-            </div>
+            <FormInput id='firstName' label='First Name' type='text' />
             <div className='inline-label'>
               <div className='label'>
                 <label htmlFor='lastName'>Last Name</label>
