@@ -118,8 +118,8 @@ function ContactContent(props) {
             )}
           </div>
 
-          <button type='reset'>Reset</button>
-          <button type='submit'>Send</button>
+          <button className='form-buttons' type='reset'>Reset</button>
+          <button className='form-buttons' type='submit'>Send</button>
 
           <div
             className='g-recaptcha'
@@ -138,6 +138,7 @@ function FormInput(props) {
         <label htmlFor={props.id}>{props.label}</label>
       </div>
       <input
+        className='input-field'
         type={props.type}
         name={props.id}
         id={props.id}
